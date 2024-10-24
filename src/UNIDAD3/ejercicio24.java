@@ -7,26 +7,25 @@ public class ejercicio24 {
     public static void main(String[] args) {
         int[][] matriz = matrizAleatoria(6,5,0,10);
         imprimirMatriz(matriz);
-        System.out.println("el vector es:");
-        imprimirV(obtenerFila(matriz,2));
+        System.out.println("la columna es : ");
+        imprimirV(obtenerColumna(matriz,2));
 
 
     }
 
-    public static int[] obtenerFila(int [][] matriz,int fila){
-        int[] vectorFila = new int[matriz.length];
+    public static int[] obtenerColumna(int [][] matriz,int columna){
+        int[] vectorColumna = new int[matriz.length];
 
-        System.out.println();
         for (int i = 0;i < matriz.length;i++){
             for (int j = 0; j < matriz[i].length;j++) {
 
-                if (j == fila) {
-                    vectorFila [i] = matriz[i][j];
+                if (j == columna) {
+                    vectorColumna[i] = matriz[i][j];
                 }
             }
 
         }
-        return vectorFila;
+        return vectorColumna;
 
     }
 

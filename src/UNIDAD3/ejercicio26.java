@@ -3,29 +3,29 @@ package UNIDAD3;
 import static UNIDAD3.ejercicio19.imprimirMatriz;
 import static UNIDAD3.ejercicio20.matrizAleatoria;
 
-public class ejercicio24opcion2 {
+public class ejercicio26 {
     public static void main(String[] args) {
         int[][] matriz = matrizAleatoria(6,5,0,10);
         imprimirMatriz(matriz);
-        System.out.println("el vector es:");
-        imprimirV(obtenerFila(matriz,2));
-
-
+        System.out.println("el vector es: ");
+        imprimirV(sumaFila(matriz));
     }
 
-    public static int[] obtenerFila(int [][] matriz,int fila){
-        int[] vectorFila = new int[matriz[0].length];
+    public static int[] sumaFila(int [][] matriz){
+        int[] vectorFila = new int[matriz.length];
+        int [] resultado = new int[matriz.length];
 
         for (int i = 0;i < matriz.length;i++){
+            int suma = 0;
             for (int j = 0; j < matriz[i].length;j++) {
+                vectorFila[i] = matriz[i][j];
+                suma = suma + vectorFila[i];
 
-                if (i == fila) {
-                    vectorFila [j] = matriz[i][j];
-                }
+
             }
-
+            resultado [i] = suma;
         }
-        return vectorFila;
+        return resultado;
 
     }
 
@@ -43,4 +43,6 @@ public class ejercicio24opcion2 {
 
 
 
+
 }
+
