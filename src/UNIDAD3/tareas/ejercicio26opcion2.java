@@ -12,12 +12,10 @@ public class ejercicio26opcion2 {
     }
 
     public static int[] sumaColumna(int [][] matriz){
-        int[] resultado = new int[matriz.length];
-        for (int i = 0;i < matriz.length;i++) {
-
-            for (int j = 0; j < matriz[i].length; j++){
-
-
+        int[] resultado = new int[matriz[0].length];
+        for (int i = 0; i < matriz[i].length;i++) {
+            for (int j = 0; j < matriz.length; j++){
+                resultado [i] += matriz[j][i];
             }
         }
 
