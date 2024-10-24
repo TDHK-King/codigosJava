@@ -1,9 +1,9 @@
 package UNIDAD3;
 
-import static UNIDAD3.ejercicio19.*;
-import static UNIDAD3.ejercicio20.*;
+import static UNIDAD3.ejercicio19.imprimirMatriz;
+import static UNIDAD3.ejercicio20.matrizAleatoria;
 
-public class ejercicio24 {
+public class ejercicio24opcion2 {
     public static void main(String[] args) {
         int[][] matriz = matrizAleatoria(6,5,0,10);
         imprimirMatriz(matriz);
@@ -14,14 +14,14 @@ public class ejercicio24 {
     }
 
     public static int[] obtenerFila(int [][] matriz,int fila){
-        int[] vectorFila = new int[matriz.length];
+        int[] vectorFila = new int[matriz[0].length];
 
         System.out.println();
         for (int i = 0;i < matriz.length;i++){
             for (int j = 0; j < matriz[i].length;j++) {
 
-                if (j == fila) {
-                    vectorFila [i] = matriz[i][j];
+                if (i == fila) {
+                    vectorFila [j] = matriz[i][j];
                 }
             }
 
@@ -33,12 +33,12 @@ public class ejercicio24 {
 
 
 
-        public static void imprimirV(int[] vector) {
-            for (int n = 0; n < vector.length; n++)
-                System.out.println(vector[n]);
+    public static void imprimirV(int[] vector) {
+        for (int n = 0; n < vector.length; n++)
+            System.out.println(vector[n]);
 
 
-        }
+    }
 
 
 

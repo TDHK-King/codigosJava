@@ -17,7 +17,7 @@ public class ejercicio20 {
             numeroingresado = scanner.nextInt();
 
 
-            if (funciones.esPar(numeroingresado)){
+            if (esPar(numeroingresado)){
                 cantidaddepares++;
                 sumapares += numeroingresado;
             }
