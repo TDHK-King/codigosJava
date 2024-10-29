@@ -19,29 +19,49 @@ public class ejercicio15 {
         System.out.println("vector 2:");
         imprimirV(vector1);
         System.out.println("imprimir vector 3:");
-        imprimirV(vectorOrdenadoMayorAMenor(vector,vector));
+        imprimirV(vectorOrdenadoMenorAMayor(vector,vector1));
     }
 
 
 
-    public static int [] vectorOrdenadoMayorAMenor(int[] vector1, int[] vector2){
+    public static int [] vectorOrdenadoMenorAMayor(int[] vector1, int[] vector2){
         int[] vectorResultante = new int[vector1.length + vector2.length];
-        for (int i = 0;i< vectorResultante.length;i++){
-        if (vector1[i]<vector2[i]){
-            vectorResultante[i] = vector1[i];
-            vectorResultante [i + 1] =vector2[i];
-        }else{
-            vectorResultante[i] = vector2[i];
-            vectorResultante[i] = vector1[i];
+        int l = vector1.length;
+        for (int i = 0;i < vector1.length;i++){
+            vectorResultante[i] = vector1 [i];
         }
-        }return vectorResultante;
+        for (int i = 0;i < vector2.length;i++){
+            vectorResultante[l] = vector2[i];
+            l++;
+        }
 
+        selectionSort(vectorResultante);
+
+
+        return vectorResultante;
 
 
 
 
     }
+    public static void selectionSort(int[] arr) {
+        int n = arr.length;
 
+        for (int i = 0; i < n - 1; i++) {
+            // Encontrar el índice del elemento mínimo en la sublista no ordenada
+            int minIdx = i;
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[minIdx]) {
+                    minIdx = j;
+                }
+            }
+
+            // Intercambiar el elemento mínimo encontrado con el primer elemento
+            int temp = arr[minIdx];
+            arr[minIdx] = arr[i];
+            arr[i] = temp;
+        }
+    }
 
 
 
