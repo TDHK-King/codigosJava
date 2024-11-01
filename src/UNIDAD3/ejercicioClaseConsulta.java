@@ -1,7 +1,7 @@
 package UNIDAD3;
 
-import static UNIDAD3.ejercicio19.*;
-import static UNIDAD3.ejercicio20.*;
+import static UNIDAD3.matrizAleatoria.*;
+import static UNIDAD3.imprimirMatriz.*;
 
 
 public class ejercicioClaseConsulta {

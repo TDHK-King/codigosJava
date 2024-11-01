@@ -1,5 +1,8 @@
 package UNIDAD3;
 
+import static UNIDAD3.funciones.imprimirVector.*;
+
+
 
 ///1) Entender la logica
 ///2) dividir el problema en subproblemas en papel
@@ -10,67 +13,55 @@ package UNIDAD3;
 
 public class E3MaxFischer {
     public static void main(String[] args) {
-            // 1. Caso de prueba simple
-            int[] prueba = {1, 2, 3, 4, 5, 6};
-            System.out.println("Entrada:");
-            imprimirArray(prueba);
+        imprimirV(vectorFibonacci(0));
 
 
 
-
-            // 2. Llamada al métod
-            int[] resultado = tuMetodo(prueba, 2);
-
-
-
-
-            // 3. Verificación
-            System.out.println("Salida:");
-            imprimirArray(resultado);
-        }
-
-        public static int[] tuMetodo(int[] array, int k) {
-
-
-
-
-            // 1. Validación
-            if (array == null || k <= 0) {
-                throw new IllegalArgumentException("Entrada inválida");
-            }
-
-
-
-
-
-            // 2. Variables necesarias
-            int[] resultado = array.clone();
-
-
-
-
-            // 3. Lógica principal
-            for (int i = 0; i < array.length; i += k) {
-                // Procesar grupos
-            }
-
-
-
-
-
-            return resultado;
-        }
-
-
-
-
-
-
-        // Métodos auxiliares útiles
-        private static void imprimirArray(int[] array) {
-            for (int num : array) {
-                System.out.print(num + " ");
-            }
-            System.out.println();
-        }
     }
+    public static int[] vectorFibonacci(int num){
+
+        if (num < 0){
+            throw new IllegalArgumentException("el numero no puede ser negativo");
+        }
+        int[] vectorResultante = new int[num];
+        if (num == 0){
+            return vectorResultante;
+
+        }
+
+
+
+        for (int i = 0; i < num;i++){
+            vectorResultante[i] = fibonacci(i+1);
+        }
+        return vectorResultante;
+
+
+
+    }
+
+
+
+    public static int fibonacci(int num){
+        //casos base
+        if (num == 0){
+            return 0;
+        }else if (num == 1){
+            return 1;
+        }else {
+            //caso recursivo
+            return fibonacci(num - 1) + fibonacci(num - 2);
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+}
