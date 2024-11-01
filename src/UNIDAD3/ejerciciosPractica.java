@@ -1,5 +1,5 @@
 package UNIDAD3;
-import static UNIDAD3.ejercicio1.*;
+import static UNIDAD3.vectorAleatorio.*;
 import static UNIDAD3.funciones.imprimirVector.*;
 
 public class ejerciciosPractica {

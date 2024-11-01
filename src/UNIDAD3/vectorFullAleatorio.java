@@ -3,7 +3,7 @@ package UNIDAD3;
 import java.util.Random;
 
 
-public class ejercicio13 {
+public class vectorFullAleatorio {
 
     public static int[] vectorFullAleatorio(int dimension,int min,int max){
         int [] vector = vectorAleatorio(dimension, min, max);

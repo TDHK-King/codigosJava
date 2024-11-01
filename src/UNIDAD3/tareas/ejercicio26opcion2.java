@@ -1,7 +1,7 @@
 package UNIDAD3.tareas;
 
-import static UNIDAD3.ejercicio19.imprimirMatriz;
-import static UNIDAD3.ejercicio20.matrizAleatoria;
+import static UNIDAD3.imprimirMatriz.imprimirMatriz;
+import static UNIDAD3.matrizAleatoria.matrizAleatoria;
 
 public class ejercicio26opcion2 {
     public static void main(String[] args) {
@@ -13,8 +13,8 @@ public class ejercicio26opcion2 {
 
     public static int[] sumaColumna(int [][] matriz){
         int[] resultado = new int[matriz[0].length];
-        for (int i = 0; i < matriz[i].length;i++) {
-            for (int j = 0; j < matriz.length; j++){
+        for (int i = 0; i < matriz.length;i++) {
+            for (int j = 0; j < matriz[0].length; j++){
                 resultado [i] += matriz[j][i];
             }
         }

@@ -1,7 +1,7 @@
 package UNIDAD3;
 
 import java.util.Scanner;
-public class ejercicio18 {
+public class matrizAEleccion {
     public static void main(String[] args) {
     }
 

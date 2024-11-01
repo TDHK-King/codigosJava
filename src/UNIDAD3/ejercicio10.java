@@ -1,6 +1,6 @@
 package UNIDAD3;
 
-import static  UNIDAD3.ejercicio1.vectorAleatorio;
+import static  UNIDAD3.vectorAleatorio.vectorAleatorio;
 import static UNIDAD3.funciones.imprimirVector.*;
 
 public class ejercicio10 {

@@ -1,9 +1,9 @@
 package UNIDAD3;
 
-import static UNIDAD3.ejercicio19.*;
-import static UNIDAD3.ejercicio20.*;
+import static UNIDAD3.imprimirMatriz.*;
+import static UNIDAD3.matrizAleatoria.*;
 
-public class ejercicio23 {
+public class matrizSuma {
     public static void main(String[] args) {
         int[][] matriz1 = matrizAleatoria(5,5,-5,10);
         System.out.println("matriz1: ");

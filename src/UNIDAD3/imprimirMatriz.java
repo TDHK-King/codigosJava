@@ -1,6 +1,6 @@
 package UNIDAD3;
 
-public class ejercicio19 {
+public class imprimirMatriz {
     public static void main(String[] args) {
 
     }

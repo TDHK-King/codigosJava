@@ -3,7 +3,7 @@ package UNIDAD3;
 import  static UNIDAD3.funciones.imprimirVector.*;
 
 
-public class ejercicio15 {
+public class vectorOrdenadoMenorAMayor {
     public static void main(String[] args) {
         int[] vector = new int[5];
         int[] vector1 = new int[5];

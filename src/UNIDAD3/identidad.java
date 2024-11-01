@@ -2,10 +2,10 @@ package UNIDAD3;
 
 import java.util.Scanner;
 
-import static UNIDAD3.ejercicio19.*;
+import static UNIDAD3.imprimirMatriz.*;
 
 
-public class ejercicio22 {
+public class identidad {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int [][] matrizResultante = identidad(scanner.nextInt());
