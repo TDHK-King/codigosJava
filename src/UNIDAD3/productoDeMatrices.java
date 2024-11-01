@@ -1,11 +1,9 @@
 package UNIDAD3;
 
-import java.io.IOException;
+import static UNIDAD3.imprimirMatriz.imprimirMatriz;
+import static UNIDAD3.matrizAleatoria.matrizAleatoria;
 
-import static UNIDAD3.ejercicio19.imprimirMatriz;
-import static UNIDAD3.ejercicio20.matrizAleatoria;
-
-public class ejercicio29 {
+public class productoDeMatrices {
     public static void main(String[] args) {
     int[][] matriz1 = matrizAleatoria(3,2,0,10);
     int[][] matriz2 = matrizAleatoria(3,4,0,10);

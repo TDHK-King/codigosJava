@@ -1,8 +1,8 @@
 package UNIDAD3;
 
-import static UNIDAD3.ejercicio18.*;
-import static UNIDAD3.ejercicio19.*;
-import static UNIDAD3.ejercicio26.*;
+import static UNIDAD3.matrizAEleccion.*;
+import static UNIDAD3.imprimirMatriz.*;
+import static UNIDAD3.sumaFila.*;
 
 public class ejercicioProfe {
     public static void main(String[] args) {

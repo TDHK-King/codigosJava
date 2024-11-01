@@ -4,7 +4,7 @@ import static UNIDAD3.funciones.imprimirVector.*;
 
 import java.util.Random;
 
-public class ejercicio14 {
+public class vectorInvertido {
     public static void main(String[] args) {
         int[] vector = vectorAleatorio(5,0,10);
         imprimirV(vector);

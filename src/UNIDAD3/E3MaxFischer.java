@@ -1,10 +1,5 @@
 package UNIDAD3;
 
-import static UNIDAD3.ejercicio1.*;
-import static UNIDAD3.funciones.imprimirVector.*;
-import static UNIDAD3.ejercicio19.*;
-import static UNIDAD3.ejercicio20.*;
-
 
 ///1) Entender la logica
 ///2) dividir el problema en subproblemas en papel

@@ -1,8 +1,8 @@
 package UNIDAD3;
 
 import java.util.Random;
-import static UNIDAD3.ejercicio19.*;
-public class ejercicio20 {
+import static UNIDAD3.imprimirMatriz.*;
+public class matrizAleatoria {
     public static void main(String[] args) {
         int[][] matrizResultante = matrizAleatoria(3,3,0,10);
         imprimirMatriz(matrizResultante);

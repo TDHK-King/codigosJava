@@ -1,9 +1,9 @@
 package UNIDAD3;
 
 import java.util.Scanner;
-import static UNIDAD3.ejercicio19.*;
+import static UNIDAD3.imprimirMatriz.*;
 
-public class ejercicio30 {
+public class matrizCuadradaDiagonal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("ingrese la dimension de la matriz: ");

@@ -1,7 +1,7 @@
 package UNIDAD3;
 
 import java.util.Random;
-public class ejercicio1 {
+public class vectorAleatorio {
     public static int[] vectorAleatorio(int dimension, int min, int max) {
         int[] vector = new int[dimension];
         for (int i = 0; i < vector.length; i++) {

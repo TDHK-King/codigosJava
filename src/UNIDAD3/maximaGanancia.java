@@ -1,10 +1,10 @@
 package UNIDAD3;
 
-import static UNIDAD3.ejercicio1.*;
+import static UNIDAD3.vectorAleatorio.*;
 import  static UNIDAD3.funciones.imprimirVector.*;
 import java.util.Scanner;
 
-public class ejercicio16 {
+public class maximaGanancia {
     public static void main(String[] args) {
         int [] vector1 = vectorAleatorio(6,0,10);
         imprimirV(vector1);

@@ -1,9 +1,9 @@
 package UNIDAD3;
 
-import static UNIDAD3.ejercicio20.*;
-import static UNIDAD3.ejercicio19.*;
+import static UNIDAD3.matrizAleatoria.*;
+import static UNIDAD3.imprimirMatriz.*;
 
-public class ejercicio21 {
+public class matrizEscalar {
     public static void main(String[] args) {
     int[][] matriz1 = matrizAleatoria(3,3,10,20);
     imprimirMatriz(matriz1);
